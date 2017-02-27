@@ -25,7 +25,7 @@ end
 function love.load()
   whale = love.graphics.newImage("img/whale.png")
 end
-function love.load()
+function love.load() -- love.draw normalement mais ça ne passe pas
   love.graphics.draw(whale, 200, 100)
 end
 function love.load()
