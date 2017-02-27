@@ -25,10 +25,10 @@ end
 function love.load()
   whale = love.graphics.newImage("img/whale.png")
 end
-function love.draw()
+function love.load()
   love.graphics.draw(whale, 200, 100)
 end
---function love.load()
---  sound = love.audio.newSource("sound/music.ogg")
---  love.audio.play(sound)
---end
+function love.load()
+  sound = love.audio.newSource("music/access.ogg")
+  love.audio.play(sound)
+end
