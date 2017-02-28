@@ -36,6 +36,14 @@ print("Energie du boss", boss.energy)
 
 
 -- Les fonction pour faire apparaitre la fenêtre Love/img/son --
+--function love.load()
+   --love.mouse.setVisible(false) -- make default mouse invisible
+   --img = love.graphics.newImage("img/mouse.png") -- load in a custom mouse image
+--end
+--function love.draw()
+   --local x, y = love.mouse.getPosition() -- get the position of the mouse
+   --love.graphics.draw(img, x, y) -- draw the custom mouse image
+--end
 function love.draw()
   love.graphics.print("Hello World!", 400, 300)
 end
@@ -49,3 +57,6 @@ function love.load()
   sound = love.audio.newSource("music/access.ogg")
   love.audio.play(sound)
 end
+--function love.resize(w, h) -- J'essaye de faire les rezize fenêtre lol
+  --print(("Window resized to width: %d and height: %d."):format(1200, 900))
+--end
