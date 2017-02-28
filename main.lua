@@ -1,3 +1,6 @@
+---------------
+-- Code Main --
+---------------
 hero = {}
 hero.life = 0
 hero.energy = 0
@@ -37,9 +40,9 @@ print("nombre de vies:",hero.energy)
 Touche(boss, 45)
 print("Energie du boss", boss.energy)
     
-
--- Les fonction pour faire apparaitre la fenêtre Love/img/son --
-
+--
+------ Les fonction pour faire apparaitre la fenêtre Love/img/son ------
+--
 function love.load()
   sound = love.audio.newSource("music/access.ogg")
   love.audio.play(sound)
