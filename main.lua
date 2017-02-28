@@ -9,14 +9,14 @@ boss.energy = 0
 function startGame()-- Initialise a chaque fois (Test)
   print("La fonction a été appelée")
   hero.energy = 100
-  hero.life = 5
+  hero.life = 50
   boss.energy = 1000
 end
 
 print("nombre de vies:",hero.life)
 startGame()
 print("nombre de vies:",hero.life)
-hero.life = hero.life - 1
+hero.life = hero.life - 10
 print("nombre de vies:",hero.life)
 startGame()
 print("nombre de vies:",hero.life)
@@ -25,6 +25,9 @@ print("Appel de la fonction terminé")
 
 function Touche(personnage, nbPoints)-- Personnage prends les valeur heros et boss
   personnage.energy = personnage.energy - nbPoints
+   if personnage.energy < 100 then
+      print("Attention tu es bléssé")
+    end
 end
 
 print("nombre de vies:",hero.energy)
@@ -33,7 +36,7 @@ print("nombre de vies:",hero.energy)
 
 Touche(boss, 45)
 print("Energie du boss", boss.energy)
-
+    
 
 -- Les fonction pour faire apparaitre la fenêtre Love/img/son --
 
@@ -44,6 +47,10 @@ function love.load()
   love.mouse.setVisible(false) -- make default mouse invisible
   img = love.graphics.newImage("img/mouse.png") -- load in a custom mouse image
 end
+--------------------------------------
+--function love.update(dt)
+  --- A voir plus tard
+--end
 --------------------------------------
 function love.draw()
   love.graphics.print("Hello World!", 400, 300)
