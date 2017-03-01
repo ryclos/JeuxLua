@@ -6,7 +6,7 @@ function love.conf(t)
     t.externalstorage = false           -- True pour sauver les fichiers (ou lire depuis le répertoire de sauvegarde) sur unsupport externe (booléen) 
     t.gammacorrect = false              -- Active la correction Gammade l'affichage, si supporté par le système (booléen)
  
-    t.window.title = "Untitled"         -- Le titre de la fenêtre (Texte)
+    t.window.title = "Donjon"         -- Le titre de la fenêtre (Texte)
     t.window.icon = nil                 -- Chemin de fichier vers une image a utiliser comme icone de fenêtre (Texte)
     t.window.width = 800                -- La largeur de la fenêtre (Nombre)
     t.window.height = 600               -- La hauteur de la fenêtre (Nombre)

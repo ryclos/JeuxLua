@@ -1,6 +1,8 @@
 ---------------
 -- Code Main --
 ---------------
+
+
 hero = {}
 hero.life = 0
 hero.energy = 0
@@ -39,7 +41,12 @@ print("nombre de vies:",hero.energy)
 
 Touche(boss, 45)
 print("Energie du boss", boss.energy)
-    
+
+love.graphics.setBackgroundColor( 80, 50, 20 , 50 ) -- R, G, B, A
+-- r, g, b, a = love.graphics.getBackgroundColor( )
+-- couleur = Color.new(255, 255, 255) -- R, G, B
+
+anyDown = love.keyboard.isDown("z") -- mmm pas encore ça
 --
 ------ Les fonction pour faire apparaitre la fenêtre Love/img/son ------
 --
