@@ -1,7 +1,7 @@
 ---------------
 -- Code Main --
 ---------------
-
+io.stdout:setvbuf('no') 
 
 hero = {}
 hero.life = 0
@@ -46,13 +46,19 @@ love.graphics.setBackgroundColor( 80, 50, 20 , 50 ) -- R, G, B, A
 -- r, g, b, a = love.graphics.getBackgroundColor( )
 -- couleur = Color.new(255, 255, 255) -- R, G, B
 
-anyDown = love.keyboard.isDown("z") -- mmm pas encore ça
+
 --
 ------ Les fonction pour faire apparaitre la fenêtre Love/img/son ------
 --
+function love.keypressed()
+  
+end
+-------------------------------------
 function love.load()
   sound = love.audio.newSource("music/access.ogg")
+  -- if key then
   love.audio.play(sound)
+  -- end
   whale = love.graphics.newImage("img/whale.png")
   love.mouse.setVisible(false) -- make default mouse invisible
   img = love.graphics.newImage("img/mouse.png") -- load in a custom mouse image

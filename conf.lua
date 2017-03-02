@@ -1,4 +1,7 @@
+require('constants')
+---------------------
 function love.conf(t)
+    
     t.identity = nil                    -- Le nom du répertoire de sauvegarde (Texte)
     t.version = "0.10.2"                -- La version de LÖVE pour laquelle ce jeu a été conçu (Texte)
     t.console = false                   -- Attache une console (booléen, Windows uniquement)
