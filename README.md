@@ -8,6 +8,9 @@ Il faut :
 - Et un petit moteur graphique en pyxel bien sympas => http://pyxeledit.com/
 
 # Pour les utilisateurs de Mac In Tosh :
-- ~ ( alt + n )
-- | ( alt + l )
-- \ ( alt + / )
+- ~  ( alt + n )
+- |  ( alt + l )
+- \  ( alt + / )
+
+![love2d logo](http://gamedevleague.com/uploads/category/category-44.png "love2d logo")
+> Un superbe moteur
