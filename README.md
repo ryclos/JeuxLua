@@ -1,5 +1,5 @@
 # JeuxLua
-Un jeu fun
+Un jeu fun <3
 
 Il faut :
 - Le moteur de jeu "Love2D" pour pouvoir lancer le code => https://love2d.org/
@@ -7,4 +7,7 @@ Il faut :
 - Il est possible de prendre juste un éditeur de texte comme Sublime (https://www.sublimetext.com/) ou Brackets (http://brackets.io/)
 - Et un petit moteur graphique en pyxel bien sympas => http://pyxeledit.com/
 
-
+# Pour les utilisateurs de Mac In Tosh :
+- ~ ( alt + n )
+- | ( alt + l )
+- \ ( alt + / )

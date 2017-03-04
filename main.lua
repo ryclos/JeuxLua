@@ -1,7 +1,16 @@
 ---------------
+-- Parametre --
+---------------
+
+io.stdout:setvbuf('no') -- Cette ligne permet d'afficher des traces dans la console pendant l'éxécution
+
+-- Empèche Love de Filtrer les contours des images quand elles sont redimensionnées
+-- Indispensable pour du pixel art (Le moteur graphique PyxelArt )
+love.graphics.setDefaultFilter("nearest")
+
+---------------
 -- Code Main --
 ---------------
-io.stdout:setvbuf('no') 
 
 hero = {}
 hero.life = 0
@@ -61,7 +70,7 @@ function love.load()
   -- end
   whale = love.graphics.newImage("img/whale.png")
   love.mouse.setVisible(false) -- make default mouse invisible
-  img = love.graphics.newImage("img/mouse.png") -- load in a custom mouse image
+  img = love.graphics.newImage("img/cursorTriangle.png") -- load in a custom mouse image
 end
 --------------------------------------
 --function love.update(dt)
