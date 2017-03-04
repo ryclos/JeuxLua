@@ -59,16 +59,20 @@ love.graphics.setBackgroundColor( 80, 50, 20 , 50 ) -- R, G, B, A
 --
 ------ Les fonction pour faire apparaitre la fenêtre Love/img/son ------
 --
-function love.keypressed(haut, bas, droite , gauche)
-  if haut == "up" then
-    love.event.quit()
-   end
+function love.keyreleased( haut, bas, droite) -- parametre en variable
+  if haut == "up"
+  then -- Si j'appuie flèche haut
+    love.event.quit( "restart" ) -- la fenêtre quitte et se relance
+  elseif haut == "down" 
+  then
+    love.audio.play(sound)
+  end
 end
 -------------------------------------
 function love.load()
   sound = love.audio.newSource("music/access.ogg")
   -- if key then
-  love.audio.play(sound)
+  --love.audio.play(sound)
   -- end
   whale = love.graphics.newImage("img/whale.png")
   love.mouse.setVisible(false) -- make default mouse invisible
