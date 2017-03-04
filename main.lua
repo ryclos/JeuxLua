@@ -59,8 +59,10 @@ love.graphics.setBackgroundColor( 80, 50, 20 , 50 ) -- R, G, B, A
 --
 ------ Les fonction pour faire apparaitre la fenêtre Love/img/son ------
 --
-function love.keypressed()
-  
+function love.keypressed(haut, bas, droite , gauche)
+  if haut == "up" then
+    love.event.quit()
+   end
 end
 -------------------------------------
 function love.load()
@@ -86,4 +88,3 @@ end
 --function love.resize(w, h) -- J'essaye de faire les rezize fenêtre lol
   --print(("Window resized to width: %d and height: %d."):format(1200, 900))
 --end
--- lol
