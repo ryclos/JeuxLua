@@ -60,15 +60,21 @@ love.graphics.setBackgroundColor( 80, 50, 20 , 50 ) -- R, G, B, A
 --
 ------ Les fonction pour faire apparaitre la fenêtre Love/img/son ------
 --
-function love.keyreleased( haut, bas, droite) -- parametre en variable
-  if haut == "up"
+function love.keyreleased(key) -- parametre en variable
+  if key == "up"
   then -- Si j'appuie flèche haut
     love.event.quit( "restart" ) -- la fenêtre quitte et se relance
-  elseif haut == "down" 
+  elseif key == "down" 
   then
     love.audio.play(sound)
+  elseif key == "escape" 
+  then
+    love.event.quit()
   end
 end
+
+
+  
 -------------------------------------
 function love.load()
   sound = love.audio.newSource("music/access.ogg")
