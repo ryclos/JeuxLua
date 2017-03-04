@@ -1,6 +1,5 @@
 -- c'est les première ligne de test
 
-
+hero = "MyAss"
 print ("what is your name traveler")
-local player = io.read()
-print ("welcome" .. player "to the path of death")
+print ("welcome " .. hero .. " to the path of death")

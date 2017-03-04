@@ -1,3 +1,4 @@
+require('test')
 ---------------
 -- Parametre --
 ---------------
@@ -72,7 +73,7 @@ end
 function love.load()
   sound = love.audio.newSource("music/access.ogg")
   -- if key then
-  --love.audio.play(sound)
+  -- love.audio.play(sound)
   -- end
   whale = love.graphics.newImage("img/whale.png")
   love.mouse.setVisible(false) -- make default mouse invisible
