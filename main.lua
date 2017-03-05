@@ -81,7 +81,7 @@ function love.load()
 
   -- love.audio.play(sound)
 
-  whale = love.graphics.newImage("img/whale.png")
+  --whale = love.graphics.newImage("img/whale.png")
   love.mouse.setVisible(false) -- make default mouse invisible
   img = love.graphics.newImage("img/cursorTriangle.png") -- load in a custom mouse image
 end
@@ -92,7 +92,8 @@ end
 --------------------------------------
 function love.draw()
   love.graphics.print("Hello World!", 200, 50)
-  love.graphics.draw(whale, 200, 100)
+  love.graphics.rectangle("line", 100, 80, 600, 500 )
+  -- love.graphics.draw(whale, 200, 100)
   local x, y = love.mouse.getPosition() -- get the position of the mouse
   love.graphics.draw(img, x, y) -- draw the custom mouse image
 end
