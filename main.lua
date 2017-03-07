@@ -100,3 +100,4 @@ end
 --function love.resize(w, h) -- J'essaye de faire les rezize fenêtre lol
   --print(("Window resized to width: %d and height: %d."):format(1200, 900))
 --end
+-- Hello
